@@ -23,9 +23,10 @@
          by block. That's what Flexbox is for. -->
 
     <header>
-      <div>
-        <a href="index.html">
-          <span aria-hidden="true"></span>
+      <div class="flex justify-center gap-4">
+        <a href="index.html" >
+          <div class="content bg-green border-100% w-14 m-12"></div>
+          <span aria-hidden="true" ></span>
           Compass
         </a>
         <nav aria-label="Primary">
@@ -45,7 +46,7 @@
            the one thing that's new: the icon still sits inline next to its
            label instead of stacked above it, because nothing here is
            flex yet. -->
-      <ul class="list-none border-t-(length:--rule) border-ink pl-0">
+      <ul class="list-none border-t-(length:--rule) border-ink pl-0 ">
         <li
           class="border-b-(length:--rule) border-ink bg-lime p-8 text-center text-on-light"
         >
@@ -59,12 +60,14 @@
             stroke-linejoin="round"
             aria-hidden="true"
           >
+          
             <path
               d="M4 5.5C4 4.67 4.67 4 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5v-13Z"
             />
             <path
               d="M20 5.5c0-.83-.67-1.5-1.5-1.5H13v16h5.5c.83 0 1.5-.67 1.5-1.5v-13Z"
             />
+          
           </svg>
           <span class="font-display text-lg font-bold">Study skills</span>
         </li>
