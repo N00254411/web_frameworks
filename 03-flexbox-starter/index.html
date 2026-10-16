@@ -23,19 +23,21 @@
          by block. That's what Flexbox is for. -->
 
     <header>
-      <div class="flex justify-center gap-4">
-        <a href="index.html" >
-          <div class="content bg-green border-100% w-14 m-12"></div>
-          <span aria-hidden="true" ></span>
+      <div class="mx-auto flex max-w-5xl flex-wrap items-center gap-4 px-5 py-4">
+        <a href="index.html" class="flex items-center font-display text-xxl font-ink tracking-tight text-ink no-underline">
+          <div class="content bg-green border-100% w-.65em m-.65em margin-right-.45em inline-block"></div>
+          <span aria-hidden="true" class="mr-2 size-3 rounded-full bg-green"></span>
           Compass
         </a>
-        <nav aria-label="Primary">
-          <a href="index.html" aria-current="page">Home</a>
-          <a href="find-support-services.html">Find support services</a>
-          <a href="student-stories.html">Student stories</a>
-          <a href="accommodations-faq.html">Accommodations FAQ</a>
-          <a href="events.html">Events & drop-ins</a>
-          <a href="request-support.html">Request support</a>
+        <nav aria-label="Primary" class="contents">
+          <a href="index.html" aria-current="page"  class="py-1 text-base font-bold text-ink underline">Home</a>
+          <a href="find-support-services.html"  class="py-1 text-base font-bold text-ink no-underline">Find support services</a>
+          <a href="student-stories.html"  class="py-1 text-base font-bold text-ink no-underline">Student stories</a>
+          <a href="accommodations-faq.html"  class="py-1 text-base font-bold text-ink no-underline">Accommodations FAQ</a>
+          <a href="events.html"  class="py-1 text-base font-bold text-ink no-underline">Events & drop-ins</a>
+        </nav>
+        <nav class="mx-auto">
+          <a href="request-support.html"  class="ml-auto py-1 font-display text-base font-extrabold text-link no-underline"class="py-1 text-base font-bold text-lime no-underline">Request support</a>
         </nav>
       </div>
     </header>
@@ -47,9 +49,7 @@
            label instead of stacked above it, because nothing here is
            flex yet. -->
       <ul class="list-none border-t-(length:--rule) border-ink pl-0 ">
-        <li
-          class="border-b-(length:--rule) border-ink bg-lime p-8 text-center text-on-light"
-        >
+        <li class="flex flex-col items-center gap-4 border-b-(length:--rule) border-ink bg-lime p-8 text-center text-on-light">
           <svg
             class="h-14 w-14"
             viewBox="0 0 24 24"
@@ -71,9 +71,7 @@
           </svg>
           <span class="font-display text-lg font-bold">Study skills</span>
         </li>
-        <li
-          class="border-b-(length:--rule) border-ink bg-ink-deep p-8 text-center text-on-dark"
-        >
+        <li class="flex flex-col items-center gap-4 border-b-(length:--rule) border-ink bg-ink-deep p-8 text-center text-on-dark">
           <svg
             class="h-14 w-14"
             viewBox="0 0 24 24"
@@ -92,9 +90,7 @@
             >Assistive technology</span
           >
         </li>
-        <li
-          class="border-b-(length:--rule) border-ink bg-green p-8 text-center text-on-light"
-        >
+      <li class="flex flex-col items-center gap-4 border-b-(length:--rule) border-ink bg-green p-8 text-center text-on-light">
           <svg
             class="h-14 w-14"
             viewBox="0 0 24 24"
@@ -111,9 +107,7 @@
           </svg>
           <span class="font-display text-lg font-bold">Wellbeing</span>
         </li>
-        <li
-          class="border-b-(length:--rule) border-ink bg-pink p-8 text-center text-on-light"
-        >
+        <li class="flex flex-col items-center gap-4 border-b-(length:--rule) border-ink bg-pink p-8 text-center text-on-light">
           <svg
             class="h-14 w-14"
             viewBox="0 0 24 24"
@@ -134,60 +128,85 @@
       </ul>
 
       <form aria-labelledby="filter-heading" method="get" action="#">
-        <h2 id="filter-heading">Filter services</h2>
+        <h2 id="filter-heading" >Filter services</h2>
 
-        <div>
-          <fieldset>
-            <legend>Category</legend>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <fieldset
+  class="border-(length:--rule) border-t-4 border-ink border-t-green bg-paper px-4 pt-3 pb-4"
+>
+            <legend
+  class="rounded-full bg-green px-3 py-1 font-display text-base font-bold text-on-light"
+>Category</legend>
             <label
-              ><input type="checkbox" name="category" value="study-skills" />
+  class="flex items-center gap-2 rounded-full border-(length:--rule) border-ink bg-paper px-3 py-1.5 font-normal"
+>
+<input type="checkbox" name="category" value="study-skills" />
               Study skills</label
             >
             <label
-              ><input type="checkbox" name="category" value="assistive-tech" />
-              Assistive technology</label
-            >
-            <label
-              ><input type="checkbox" name="category" value="wellbeing" />
-              Wellbeing</label
-            >
-            <label
-              ><input type="checkbox" name="category" value="financial" />
-              Financial</label
-            >
-            <label
-              ><input type="checkbox" name="category" value="social" /> Social
+        class="flex items-center gap-2 rounded-full border-(length:--rule) border-ink bg-paper px-3 py-1.5 font-normal"
+      ><input type="checkbox" name="category" value="assistive-tech" />
+                    Assistive technology</label
+                  >
+                  <label
+        class="flex items-center gap-2 rounded-full border-(length:--rule) border-ink bg-paper px-3 py-1.5 font-normal"
+      ><input type="checkbox" name="category" value="wellbeing" />
+                    Wellbeing</label
+                  >
+                  <label class="flex items-center gap-2 rounded-full border-(length:--rule) border-ink bg-paper px-3 py-1.5 font-normal"
+      ><input type="checkbox" name="category" value="financial" />
+                    Financial
+                    </label>
+                  <label
+        class="flex items-center gap-2 rounded-full border-(length:--rule) border-ink bg-paper px-3 py-1.5 font-normal"
+      ><input type="checkbox" name="category" value="social" /> Social
               & peer</label
             >
           </fieldset>
 
-          <fieldset>
-            <legend>Format</legend>
-            <label
-              ><input type="checkbox" name="format" value="in-person" /> In
-              person</label
+          <fieldset
+  class="border-(length:--rule) border-t-4 border-ink border-t-green bg-paper px-4 pt-3 pb-4"
+>
+            <legend
+              class="rounded-full bg-green px-3 py-1 font-display text-base font-bold text-on-light"
+            >Format</legend>
+                        <label
+              class="flex items-center gap-2 rounded-full border-(length:--rule) border-ink bg-paper px-3 py-1.5 font-normal"
             >
-            <label
-              ><input type="checkbox" name="format" value="online" />
-              Online</label
-            >
-            <label
-              ><input type="checkbox" name="format" value="email" />
+            <input type="checkbox" name="format" value="in-person" /> In
+                          person</label
+                        >
+                        <label
+              class="flex items-center gap-2 rounded-full border-(length:--rule) border-ink bg-paper px-3 py-1.5 font-normal"
+            ><input type="checkbox" name="format" value="online" />
+                          Online</label
+                        >
+                        <label
+              class="flex items-center gap-2 rounded-full border-(length:--rule) border-ink bg-paper px-3 py-1.5 font-normal"
+            ><input type="checkbox" name="format" value="email" />
               Email</label
             >
           </fieldset>
 
-          <fieldset>
-            <legend>Campus</legend>
+          <fieldset
+          class="border-(length:--rule) border-t-4 border-ink border-t-green bg-paper px-4 pt-3 pb-4"
+        >
+                    <legend
+          class="rounded-full bg-green px-3 py-1 font-display text-base font-bold text-on-light"
+        >Campus</legend>
+                    <label
+          class="flex items-center gap-2 rounded-full border-(length:--rule) border-ink bg-paper px-3 py-1.5 font-normal"
+        >
+        <input type="checkbox" name="campus" value="city" /> City</label
+                    > 
             <label
-              ><input type="checkbox" name="campus" value="city" /> City</label
-            >
-            <label
-              ><input type="checkbox" name="campus" value="riverside" />
-              Riverside</label
-            >
-            <label
-              ><input type="checkbox" name="campus" value="online-only" />
+          class="flex items-center gap-2 rounded-full border-(length:--rule) border-ink bg-paper px-3 py-1.5 font-normal"
+        ><input type="checkbox" name="campus" value="riverside" />
+                      Riverside</label
+                    >
+                    <label
+          class="flex items-center gap-2 rounded-full border-(length:--rule) border-ink bg-paper px-3 py-1.5 font-normal"
+        ><input type="checkbox" name="campus" value="online-only" />
               Online only</label
             >
           </fieldset>
@@ -198,14 +217,14 @@
     <!-- Homework target: build this into a real footer link list using
          gap-x-*/gap-y-*. Nothing here has a class yet either. -->
     <footer>
-      <nav aria-label="Footer">
-        <ul>
+      <nav aria-label="Footer" >
+        <ul class="flex flex-wrap justify-center gap-y-auto gap-x-auto">
           <li>
-            <a href="find-support-services.html">Find support services</a>
+            <a href="find-support-services.html" class="py-1 text-base font-bold text-ink no-underline">Find support services</a>
           </li>
-          <li><a href="accommodations-faq.html">Accommodations FAQ</a></li>
-          <li><a href="events.html">Events & drop-ins</a></li>
-          <li><a href="request-support.html">Request support</a></li>
+          <li><a href="accommodations-faq.html" class="py-1 text-base font-bold text-ink no-underline">Accommodations FAQ</a></li>
+          <li><a href="events.html" class="py-1 text-base font-bold text-ink no-underline">Events & drop-ins</a></li>
+          <li><a href="request-support.html" class="py-1 text-base font-bold text-lime no-underline">Request support</a></li>
         </ul>
       </nav>
     </footer>
