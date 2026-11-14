@@ -21,4 +21,9 @@
   --color-sun: #FFF0B3;
 
   --font-display: "inter", sans-serif;
+
+  --space-1: 0.25rem;
+  --space-2: 0.625rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
 }
