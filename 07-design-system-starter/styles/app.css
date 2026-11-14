@@ -3,3 +3,22 @@
 /* Week 7: this is where your tokens go. The page in index.html already uses
    them by name, but nothing defines them yet, so it has no colours, fonts or
    sizes. Follow the lesson to write the @theme section. */
+
+@theme {
+  --color-blush: #F5EEFF;
+  --color-bubblegum: #FFC6CF;
+  --color-light: #FBF9FF;
+  --color-powder: #EBDEFF;
+  --color-lilac: #9877B8;
+  --color-eggplant: #420082;
+  --color-plum: #27006A;
+  --color-midnight: #2B224F;
+  --color-denim: #3F67B4;
+  --color-pale_denim: #97ABD1;
+  --color-sky: #A5CEEC;
+  --color-white_gold: #FFFEF6;
+  --color-butter: #FFEFAE;
+  --color-sun: #FFF0B3;
+
+  --font-display: "inter", sans-serif;
+}
