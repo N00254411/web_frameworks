@@ -2,3 +2,26 @@
 
 /* Your site's design tokens go in an @theme block here, from your own Figma
    variables. That is week 7. Until then this file only imports Tailwind. */
+@theme {
+  --color-blush: #F5EEFF;
+  --color-bubblegum: #FFC6CF;
+  --color-light: #FBF9FF;
+  --color-powder: #EBDEFF;
+  --color-lilac: #9877B8;
+  --color-eggplant: #420082;
+  --color-plum: #27006A;
+  --color-midnight: #2B224F;
+  --color-denim: #3F67B4;
+  --color-pale_denim: #97ABD1;
+  --color-sky: #A5CEEC;
+  --color-white_gold: #FFFEF6;
+  --color-butter: #FFEFAE;
+  --color-sun: #FFF0B3;
+
+  --font-display: "inter", sans-serif;
+
+  --space-1: 0.25rem;
+  --space-2: 0.625rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+}
