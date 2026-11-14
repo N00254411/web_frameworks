@@ -40,3 +40,21 @@
     animation-duration: 0.01ms !important;
   }
 }
+
+@layer components {
+  .btn {
+    @apply inline-block cursor-pointer border-(length:--rule) border-ink bg-lime px-6 py-2.5 font-display font-extrabold text-ink no-underline transition-colors duration-120 hover:border-link hover:bg-ink-deep hover:text-on-dark focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-link active:bg-ink motion-reduce:transition-none;
+  }
+}
+
+/* @layer components {
+  .ring-box {
+    outline: 3px solid var(--color-ink);
+    outline-offset: 3px;
+  }
+}
+
+@utility ring-demo {
+  outline: 3px solid var(--color-ink);
+  outline-offset: 3px;
+} */
